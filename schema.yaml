@@ -5,9 +5,10 @@ COLUMNS:
   numBalconies: float64
   isNegotiable: int64
   verificationDate: float64
-  SecurityDeposit: object
+  SecurityDeposit: int64
   Status: int64
   bhk: int64
   house_size_sqft: int64
+  city: int64
 TARGET_COLUMN:
   name: price
