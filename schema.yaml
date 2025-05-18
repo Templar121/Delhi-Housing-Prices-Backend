@@ -1,0 +1,13 @@
+COLUMNS:
+  house_type: int64
+  location: int64
+  numBathrooms: float64
+  numBalconies: float64
+  isNegotiable: int64
+  verificationDate: float64
+  SecurityDeposit: object
+  Status: int64
+  bhk: int64
+  house_size_sqft: int64
+TARGET_COLUMN:
+  name: price
