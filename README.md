@@ -1,11 +1,11 @@
-# Delhi Housing Prices Backend
+# Indian Housing Prices Backend
 
 ### STEPS :
 
 Clone the repository
 
 ```bash
-https://github.com/Templar121/Delhi-Housing-Prices-Backend
+https://github.com/Templar121/Indian-Housing-Prices-Backend
 ```
 
 ### STEP A - Create a conda environment after opening the repository
