@@ -1,0 +1,16 @@
+pandas 
+numpy
+scikit-learn
+catboost
+matplotlib
+python-box==6.0.2
+pyYAML
+shap
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML
+fastapi
+uvicorn[standard]
+typeguard
+-e .
