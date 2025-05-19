@@ -1,3 +1,3 @@
-CatBoost:
+CatBoostRegressor:
   verbose: 0
   random_seed: 42
