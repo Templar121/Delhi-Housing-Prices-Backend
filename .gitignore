@@ -1,6 +1,7 @@
 houseproj/
 __pycache__/
 artifacts/*
+catboost_info/*
 
 # Distribution / packaging
 .Python
