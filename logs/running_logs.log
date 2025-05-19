@@ -66,3 +66,44 @@ Source-Age: 0
 [2025-05-18 21:39:56,313: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2025-05-18 21:54:12,225: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-18 21:54:12,241: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-18 21:54:12,246: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 21:54:12,260: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-05-18 21:54:12,261: INFO: common: created directory at: artifacts]
+[2025-05-18 21:54:12,261: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-18 21:54:13,171: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 112518
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "691ac908c0becb0d4f1567c901012a69e6cf15b579b6e38a13a3d75f1dc9e0ed"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CB20:408C9:25CE89:61C794:682A03DF
+Accept-Ranges: bytes
+Date: Sun, 18 May 2025 16:24:13 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ccu830037-CCU
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1747585453.083884,VS0,VE285
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 48a4aabc2ec13c93bdfd308bdf7c436e1d21b64d
+Expires: Sun, 18 May 2025 16:29:13 GMT
+Source-Age: 0
+
+]
+[2025-05-18 21:54:13,193: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-05-18 22:03:27,099: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-18 22:03:27,117: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-18 22:03:27,117: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-05-18 22:03:27,117: INFO: common: created directory at: artifacts]
+[2025-05-18 22:03:27,117: INFO: common: created directory at: artifacts/data_validation]
