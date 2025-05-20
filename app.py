@@ -52,11 +52,13 @@ city_mapping = {
     'Mumbai': 2,
 }
 
-# Load location encodings from JSON
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Load location encodings from JSON using absolute paths
 location_encodings = {
-    'Delhi': json.load(open('data/delhi_location_freq_encoding.json')),
-    'Pune': json.load(open('data/pune_location_freq_encoding.json')),
-    'Mumbai': json.load(open('data/mumbai_location_freq_encoding.json')),
+    'Delhi': json.load(open(os.path.join(BASE_DIR, 'data', 'delhi_location_freq_encoding.json'))),
+    'Pune': json.load(open(os.path.join(BASE_DIR, 'data', 'pune_location_freq_encoding.json'))),
+    'Mumbai': json.load(open(os.path.join(BASE_DIR, 'data', 'mumbai_location_freq_encoding.json'))),
 }
 
 @app.post("/predict")
