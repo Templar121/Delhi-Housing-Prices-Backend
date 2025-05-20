@@ -125,3 +125,13 @@ def get_size(path: Path) -> str:
     return f"~ {size_in_kb} KB"
 
 
+def load_location_encodings():
+    # Calculate path to src/data folder
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 
+    DATA_DIR = os.path.join(BASE_DIR, 'Encoder')
+
+    return {
+        'Delhi': json.load(open(os.path.join(DATA_DIR, 'Delhi_location_freq_encoding.json'))),
+        'Pune': json.load(open(os.path.join(DATA_DIR, 'Pune_location_freq_encoding.json'))),
+        'Mumbai': json.load(open(os.path.join(DATA_DIR, 'Mumbai_location_freq_encoding.json'))),
+    }

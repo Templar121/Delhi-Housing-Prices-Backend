@@ -6,6 +6,7 @@ import os
 from houseProject.pipeline.prediction import PredictionPipeline
 from datetime import date
 import json
+from houseProject.utils.common import load_location_encodings
 
 app = FastAPI()
 
@@ -52,14 +53,8 @@ city_mapping = {
     'Mumbai': 2,
 }
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Load location encodings from JSON files in the same directory
-location_encodings = {
-    'Delhi': json.load(open(os.path.join(BASE_DIR, 'delhi_location_freq_encoding.json'))),
-    'Pune': json.load(open(os.path.join(BASE_DIR, 'pune_location_freq_encoding.json'))),
-    'Mumbai': json.load(open(os.path.join(BASE_DIR, 'mumbai_location_freq_encoding.json'))),
-}
+location_encodings = load_location_encodings()
 
 @app.post("/predict")
 async def predict(data: PredictionInput):
