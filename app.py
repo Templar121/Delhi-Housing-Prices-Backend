@@ -54,14 +54,11 @@ city_mapping = {
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Construct the path to the data directory
-DATA_DIR = os.path.join(BASE_DIR, "data")
-
-# Load location encodings from JSON files
+# Load location encodings from JSON files in the same directory
 location_encodings = {
-    'Delhi': json.load(open(os.path.join(DATA_DIR, 'delhi_location_freq_encoding.json'))),
-    'Pune': json.load(open(os.path.join(DATA_DIR, 'pune_location_freq_encoding.json'))),
-    'Mumbai': json.load(open(os.path.join(DATA_DIR, 'mumbai_location_freq_encoding.json'))),
+    'Delhi': json.load(open(os.path.join(BASE_DIR, 'delhi_location_freq_encoding.json'))),
+    'Pune': json.load(open(os.path.join(BASE_DIR, 'pune_location_freq_encoding.json'))),
+    'Mumbai': json.load(open(os.path.join(BASE_DIR, 'mumbai_location_freq_encoding.json'))),
 }
 
 @app.post("/predict")
