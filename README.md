@@ -1,5 +1,23 @@
 # Indian Housing Prices Backend
 
+
+## 🧠 Model Used
+
+**Algorithm:** CatBoost Regressor  
+**Training:** Preprocessed housing data (encoded & log-transformed)  
+**Evaluation Metrics:**
+
+| Metric                    | Value     |
+|---------------------------|-----------|
+| MAE (Mean Absolute Error) | 0.1770    |
+| MSE (Mean Squared Error)  | 0.0669    |
+| RMSE                      | 0.2586    |
+| R² Score                  | 0.9559    |
+| Median Absolute Error     | 0.1193    |
+| Explained Variance Score  | 0.9559    |
+
+
+
 ### STEPS :
 
 Clone the repository
